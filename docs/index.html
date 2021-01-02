@@ -1,0 +1,19 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ "/assets/css/games.css" | relative_url }}">
+  </head>
+  <body>
+    <div id="games"></div>
+    <script src="{{ "/assets/js/games.js" | relative_url }}"></script>
+    <script>
+      var app = Elm.Main.init({
+        node: document.getElementById("games")
+      });
+    </script>
+  </body>
+</html>
